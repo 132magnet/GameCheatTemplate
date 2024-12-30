@@ -18,10 +18,6 @@
 6. Paste the following code to install all needed packages:
 
 ```csharp
-MemoryUtils.WriteBytes(processHandle, gameBase, 0x123456, new byte[] { 0x90, 0x90, 0x90 });
-```
-
-```csharp
 <ItemGroup>
 	<PackageReference Include="ClickableTransparentOverlay" Version="6.2.1" />
 	<PackageReference Include="ImGui.NET" Version="1.89.7.1" />
