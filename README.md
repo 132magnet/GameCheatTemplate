@@ -5,8 +5,8 @@
 This template is designed for creating game cheats or trainers that interface with a game's memory. It is structured into three scripts:
 
 1. **Program.cs**: Initializes the application and manages the overlay rendering.
-2. **Funktions.cs**: Contains utility functions for memory manipulation.
-3. **LogicAndRender.cs**: Manages cheat logic and user interface rendering.
+2. **MemoryUtils.cs**: Contains utility functions for memory manipulation.
+3. **CheatLogic.cs**: Manages cheat logic and user interface rendering.
 
 By following this guide, even beginners can get started with using and customizing the template.
 
@@ -26,10 +26,10 @@ By following this guide, even beginners can get started with using and customizi
    - No modifications are needed unless you want to alter the overlay behavior.
    - This script manages the overlay window and starts the cheat logic thread.
 
-2. **Funktions.cs**:
+2. **MemoryUtils.cs**:
    - Contains methods to read and write memory. Update offsets and logic in `ResolvePointerChain`, `WriteFloat`, and `WriteBytes` as needed for your target game.
 
-3. **LogicAndRender.cs**:
+3. **CheatLogic.cs**:
    - Replace `ProcessName` and `GameModule` with your game's process and module names.
    - Add offsets and memory manipulation logic specific to your desired features.
 
@@ -46,7 +46,7 @@ By following this guide, even beginners can get started with using and customizi
 
 ### Using Memory Functions
 
-The utility functions in `Funktions.cs` are central to interacting with the game's memory. Below are detailed instructions for each function:
+The utility functions in **MemoryUtils.cs** are central to interacting with the game's memory. Below are detailed instructions for each function:
 
 #### 1. WriteBytes
 
@@ -110,7 +110,7 @@ IntPtr address = MemoryUtils.ResolvePointerChain(processHandle, baseAddress, new
 
 ### Adding Features
 
-1. Open `LogicAndRender.cs`.
+1. Open **CheatLogic.cs**.
 2. Add toggles in `RenderUI` for the new feature.
 3. Implement the feature logic in `RunHackLogic`.
 
