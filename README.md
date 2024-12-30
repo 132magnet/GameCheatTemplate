@@ -42,7 +42,7 @@ Right-click on the **Project Explorer** and select **Open in Explorer**.
 ![Open in Explorer](./pictures/7.png)
 
 ### Step 8: Download and Add Scripts
-Download the [Scripts](./scripts) folder, then drag and drop them into your project.  
+Download the [Scripts](./Scripts) folder, then drag and drop them into your project.  
 ![Add Scripts](./pictures/8.png)
 
 ### Step 9: Replace `Program.cs`
